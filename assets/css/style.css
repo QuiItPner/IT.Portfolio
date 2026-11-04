@@ -889,6 +889,7 @@ img {
   margin-bottom: 0.45rem;
   line-height: 1.7;
   color: rgba(0, 0, 0, 0.82);
+  text-align: justify;
 }
 
 .techTag {
