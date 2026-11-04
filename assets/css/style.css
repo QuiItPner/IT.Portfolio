@@ -888,8 +888,6 @@ img {
 .introParagraph {
   text-align: justify;
   text-justify: inter-word;
-  -webkit-hyphens: auto;
-  hyphens: auto;
   overflow-wrap: break-word;
 }
 
@@ -899,8 +897,6 @@ img {
   color: rgba(0, 0, 0, 0.82);
   text-align: justify;
   text-justify: inter-word;
-  -webkit-hyphens: auto;
-  hyphens: auto;
   overflow-wrap: break-word;
 }
 
