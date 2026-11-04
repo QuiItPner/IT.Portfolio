@@ -887,6 +887,10 @@ img {
 
 .introParagraph {
   text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
 }
 
 .experienceList li {
@@ -894,14 +898,10 @@ img {
   line-height: 1.7;
   color: rgba(0, 0, 0, 0.82);
   text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
   overflow-wrap: break-word;
-}
-
-@media screen and (max-width: 767px) {
-  .introParagraph,
-  .experienceList li {
-    text-align: left;
-  }
 }
 
 .techTag {
