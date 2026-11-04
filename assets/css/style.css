@@ -900,6 +900,18 @@ img {
   overflow-wrap: break-word;
 }
 
+@media screen and (max-width: 767px) {
+  .introParagraph,
+  .experienceList li {
+    text-align: left;
+    text-wrap: pretty;
+  }
+
+  .experienceList {
+    padding-left: 1rem;
+  }
+}
+
 .techTag {
   display: inline-block;
   background: #f5f7f9;
