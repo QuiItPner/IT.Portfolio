@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Mai Phuc Qui | IT Support / Helpdesk &amp; Web Developer</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Mai Phuc Qui - IT Support / Helpdesk &amp; Web Developer at Phu Nong Co., Ltd. from Can Tho, Vietnam. Specializing in Python, Node.js, ExpressJS, .NET, LangChain, and automation tools." />
+  <meta name="author" content="Mai Phuc Qui" />
+  <meta name="keywords"
+    content="Mai Phuc Qui, QuiItPner, PhucQui003, IT Support, Helpdesk, Web Developer, Full-stack Developer, Python, NodeJS, ExpressJS, MongoDB, .NET, LangChain, Phu Nong, Nam Can Tho University" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph / Facebook / Zalo -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://iamphucqui-it-phunong.vercel.app/" />
+  <meta property="og:title" content="Mai Phuc Qui | IT Support / Helpdesk &amp; Web Developer" />
+  <meta property="og:description"
+    content="Portfolio of Mai Phuc Qui - IT Support &amp; Helpdesk at Phu Nong Co., Ltd., Web Developer specializing in web applications, AI Chatbots, and automation tools." />
+  <meta property="og:image" content="assets/images/og_banner.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Mai Phuc Qui Portfolio" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mai Phuc Qui | IT Support / Helpdesk &amp; Web Developer" />
+  <meta name="twitter:description"
+    content="Portfolio of Mai Phuc Qui - IT Support &amp; Helpdesk at Phu Nong Co., Ltd., Web Developer." />
+  <meta name="twitter:image" content="assets/images/og_banner.png" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+  <link rel="shortcut icon" href="assets/images/favicon.ico" />
+
+  <!-- Font Awesome 4.7.0 (matching hongtin2104.github.io) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <!-- Main Stylesheet & Animations -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- Structured Data (JSON-LD Schema) -->
+  <script type="application/ld+json">
+  [
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Mai Phuc Qui",
+      "alternateName": ["Mai Phúc Quí", "QuiItPner", "PhucQui003"],
+      "url": "https://iamphucqui-it-phunong.vercel.app/",
+      "jobTitle": "IT Support / Helpdesk & Backend Developer",
+      "gender": "Male",
+      "nationality": {
+        "@type": "Country",
+        "name": "Vietnam"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": "Nam Can Tho University"
+      },
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Phu Nong Co., Ltd."
+      },
+      "sameAs": [
+        "https://github.com/QuiItPner",
+        "https://github.com/PhucQui003",
+        "https://www.linkedin.com/in/phucqui2310/",
+        "https://www.facebook.com/iamphucqui/"
+      ],
+      "knowsAbout": ["Python", "Node.js", "ExpressJS", "MongoDB", ".NET Framework", "C#", "LangChain", "SQL Server", "Bootstrap", "IT Support", "Automation Tools"],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Can Tho",
+        "addressCountry": "VN"
+      }
+    }
+  ]
+  </script>
+</head>
+
+<body class="light">
+  <!-- Ant Design Toast Notification -->
+  <div id="antToast" class="ant-message-toast" role="status" aria-live="polite">
+    <i class="fa fa-check-circle" style="color: #52c41a; font-size: 18px; margin: 0;"></i>
+    <span class="toast-text">Thank you for your kind response! Will get back to you.</span>
+  </div>
+
+  <div id="___gatsby" style="min-height: 100vh;">
+    <section class="ant-layout outerPadding">
+      <section class="ant-layout container">
+
+        <!-- ==================== HEADER NAVIGATION ==================== -->
+        <div style="background: transparent;">
+          <div id="circleMenuBtn" class="circleMenu" role="button" tabindex="0" aria-label="Toggle Menu">
+            <div id="hamburgerIcon" class="hamburger">
+              <div class="line"></div>
+              <div class="line"></div>
+              <div class="hamburgerText">MENU</div>
+            </div>
+          </div>
+
+          <section id="headerNavWrap" class="ant-layout navWrap hidden">
+            <div class="backgroundDiv">
+              <ul class="nav">
+                <li class="navItem">
+                  <a href="#about" data-page="about" class="anchorActive">About</a>
+                </li>
+                <li class="navItem">
+                  <a href="#projects" data-page="about" data-scroll="projectsSection">Projects</a>
+                </li>
+                <li class="navItem">
+                  <a href="#contact" data-page="contact">Contact</a>
+                </li>
+                <li class="navItem">
+                  <a href="#resume" data-page="resume">Resume</a>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+
+        <!-- ==================== MAIN CONTENT + SIDEBAR ==================== -->
+        <section class="ant-layout">
+          <main class="ant-layout-content contentWrapper">
+            <div class="ant-row">
+
+              <!-- ==================== LEFT SIDEBAR ==================== -->
+              <div id="sidebarCol"
+                class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-9 ant-col-lg-6 sidebarContent animate-fade-in-up">
+                <aside>
+                  <div class="profileAvatar float-animation"
+                    title="Mai Phuc Qui - IT Support / Helpdesk &amp; Web Developer"
+                    aria-label="Mai Phuc Qui Profile Picture" role="img">
+                    <span class="sr-only" style="display: none;">
+                      Mai Phuc Qui is an IT Support/Helpdesk specialist and Web Developer specializing in
+                      Python, Node.js, .NET, and automation tools.
+                    </span>
+                  </div>
+
+                  <div class="name centerAlign">
+                    <div class="boxName centerAlign">
+                      <h2>
+                        <span>Mai Phuc Qui</span>
+                      </h2>
+                    </div>
+                    <div class="badge badgeGray">IT Support / Helpdesk</div>
+                    <div class="badge badgeGray">Web Developer</div>
+
+                    <!-- Social Links with hover-grow animation -->
+                    <div class="centerAlign box">
+                      <a href="https://github.com/QuiItPner" target="_blank" rel="noopener noreferrer"
+                        class="hover-grow" title="Mai Phuc Qui GitHub (QuiItPner)"
+                        aria-label="Mai Phuc Qui GitHub (QuiItPner)">
+                        <span class="fa fa-github"></span>
+                      </a>
+                      <a href="https://www.facebook.com/iamphucqui/" target="_blank" rel="noopener noreferrer"
+                        class="hover-grow" title="Mai Phuc Qui Facebook Profile"
+                        aria-label="Mai Phuc Qui Facebook Profile">
+                        <span class="fa fa-facebook-f"></span>
+                      </a>
+                      <a href="https://www.linkedin.com/in/phucqui2310/" target="_blank" rel="noopener noreferrer"
+                        class="hover-grow" title="Mai Phuc Qui LinkedIn Profile"
+                        aria-label="Mai Phuc Qui LinkedIn Profile">
+                        <span class="fa fa-linkedin"></span>
+                      </a>
+                    </div>
+
+                    <!-- Contact Info with Feather SVG Icons (matching hongtin2104) -->
+                    <ul class="box badge contactBlock">
+                      <li class="contactBlockItem">
+                        <span>
+                          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-phone">
+                            <path
+                              d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                            </path>
+                          </svg>
+                        </span>
+                        &nbsp; &nbsp; <a href="tel:0367068482">0367068482</a>
+                      </li>
+                      <li class="contactBlockItem">
+                        <span>
+                          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-map-pin">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                          </svg>
+                        </span>
+                        &nbsp; &nbsp; Can Tho, Viet Nam
+                      </li>
+                      <li class="contactBlockItem">
+                        <span>
+                          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-mail">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                            </path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                          </svg>
+                        </span>
+                        <a href="mailto:quigitit350@gmail.com" target="_top" title="quigitit350@gmail.com">
+                          &nbsp; &nbsp; quigitit350@gmail.com
+                        </a>
+                      </li>
+                      <li class="contactBlockItem">
+                        <span>
+                          <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="feather feather-award">
+                            <circle cx="12" cy="8" r="7"></circle>
+                            <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                          </svg>
+                        </span>
+                        &nbsp; &nbsp; VSTEP B2
+                      </li>
+                    </ul>
+
+                    <!-- Download CV Button with pulse-animation -->
+                    <div class="resumeDownload">
+                      <a href="assets/resume/CV_MaiPhucQui.pdf" download="CV_MaiPhucQui.pdf" class="pulse-animation">
+                        <i class="fa fa-download" style="margin: 0;"></i> Download CV
+                      </a>
+                    </div>
+
+                    <div class="copyright"
+                      style="text-align: center; margin-top: 20px; font-size: 0.85rem; color: #888;">
+                      © <span id="currentYear">2026</span> Mai Phuc Qui
+                    </div>
+                  </div>
+                </aside>
+              </div>
+
+              <!-- ==================== RIGHT MAIN CONTENT ==================== -->
+              <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-15 ant-col-lg-18 mainContent">
+                <section class="ant-layout boxContent borderRadiusSection">
+
+                  <!-- ==================== VIEW 1: ABOUT / HOME ==================== -->
+                  <div id="view-about" class="page-view active-view">
+                    <div id="QuiItPner">
+
+                      <!-- 1. ABOUT ME SECTION (delay-100) -->
+                      <div class="animate-fade-in-up delay-100">
+                        <div style="line-height: 180%;">
+                          <div>
+                            <h1 class="titleSeparate">Mai Phuc Qui</h1>
+                            <p style="font-size: 1.2rem; font-weight: 500; color: #555; margin-bottom: 20px;">
+                              IT Support / Helpdesk &amp; Web Developer
+                            </p>
+                            <p>
+                              I am Mai Phuc Qui, a Computer Science graduate and currently working at Phu Nong Co.,
+                              Ltd. as an IT Support / Helpdesk &amp; Website Administrator. My primary focus is
+                              providing daily on-site and remote technical support (UltraViewer, AnyDesk, TeamViewer),
+                              troubleshooting PC/Laptop hardware, Windows 10/11 OS, Microsoft Office/Outlook, and
+                              network printers, as well as setting up workstations for new employees and managing IT
+                              assets. I also administer internal LAN/WAN networks, static/dynamic IP allocation,
+                              enterprise Wi-Fi access points, routers/switches, timekeeping devices, and IP CCTV camera
+                              systems to ensure seamless connectivity across all departments. Additionally, I serve as
+                              the full-access Website Administrator for the company's official website (phunong.com.vn)
+                              - managing WordPress drag-and-drop layouts, publishing content, fixing UI issues, and
+                              monitoring website traffic - while developing internal Python automation tools and product
+                              landing pages to support my colleagues.
+                            </p>
+                            <!-- Quick Highlights Grid (From CV + GitHub Profile) -->
+                            <div class="aboutHighlights">
+                              <div class="highlightCard">
+                                <div class="highlightIcon"><i class="fa fa-graduation-cap" style="margin:0;"></i></div>
+                                <div class="highlightBody">
+                                  <h4>Education (2021 - 2025)</h4>
+                                  <p>Bachelor of Computer Science • <strong>GPA: 3.3 / 4.0</strong></p>
+                                </div>
+                              </div>
+                              <div class="highlightCard">
+                                <div class="highlightIcon"><i class="fa fa-briefcase" style="margin:0;"></i></div>
+                                <div class="highlightBody">
+                                  <h4>Current Position</h4>
+                                  <p>IT Support / Helpdesk at <strong>Phu Nong Co.,
+                                      Ltd.</strong></p>
+                                </div>
+                              </div>
+                              <div class="highlightCard">
+                                <div class="highlightIcon"><i class="fa fa-certificate" style="margin:0;"></i></div>
+                                <div class="highlightBody">
+                                  <h4>Certificate &amp; Goals</h4>
+                                  <p>Claude Certificate (<a href="https://verify.skilljar.com/c/w7g74aevrgqu"
+                                      target="_blank" rel="noopener noreferrer" class="verifyLink">Verify</a>) • Goal:
+                                    Master Python &amp; IELTS 6.5</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- 2. WORK EXPERIENCE & CV PROJECTS SECTION (delay-300) -->
+                      <div class="animate-fade-in-up delay-300" style="margin-top: 1.5rem;">
+                        <div style="line-height: 180%;">
+                          <h2 class="titleSeparate">Work Experience &amp; Key Projects</h2>
+
+                          <!-- Experience 1: Phu Nong Co., Ltd. -->
+                          <div class="experienceBlock">
+                            <div class="ant-row">
+                              <div class="ant-col ant-col-xs-24">
+                                <h3 style="margin-bottom: 0.25em;">PHU NONG CO., LTD.</h3>
+                                <span class="experienceMeta"><strong>IT Support / Helpdesk &amp; Website
+                                    Administrator</strong> | Intern &amp; Full-time IT Staff (2025 - Present)</span>
+                              </div>
+                            </div>
+                            <ul class="experienceList">
+                              <li><strong>End-User Technical Support (On-site &amp; Remote Helpdesk):</strong> Provide
+                                daily L1/L2 technical support for all departments via on-site assistance and remote
+                                tools (UltraViewer, AnyDesk, TeamViewer); troubleshoot and resolve PC/Laptop hardware
+                                failures, Windows 10/11 OS errors, Microsoft Office/Outlook issues, and software
+                                conflicts.</li>
+                              <li><strong>Internal Network, IP &amp; Device Administration:</strong> Administer internal
+                                LAN/WAN networks, manage static/dynamic IP allocation (DHCP/DNS), and configure
+                                enterprise Wi-Fi access points, routers/switches, network printers/scanners, timekeeping
+                                devices, and IP CCTV camera systems to ensure seamless connectivity.</li>
+                              <li><strong>Workstation Setup, IT Asset Management &amp; Maintenance:</strong> Set up and
+                                deploy computers, email accounts, and required software for new employees; manage IT
+                                equipment inventory, perform hardware upgrades (RAM/SSD), data backups, and periodic
+                                system maintenance.</li>
+                              <li><strong>Official Website Administration (<a href="https://phunong.com.vn/"
+                                    target="_blank" rel="noopener noreferrer">phunong.com.vn</a>):</strong> Serve as
+                                full-access Website Administrator on WordPress - customizing and editing drag-and-drop
+                                page layouts, fixing UI/UX display issues, publishing product and news articles, and
+                                monitoring website traffic and performance analytics.</li>
+                              <li><strong>Internal Tools &amp; Digital Portals:</strong> Developed practical Python
+                                automation tools (<strong>Automatic Attendance &amp; Excel Timekeeping Tool</strong>)
+                                alongside product landing pages and digital crop protection portals on Vercel.</li>
+                              <li><strong>Skills &amp; Tools:</strong> IT Helpdesk (On-site/Remote: UltraViewer,
+                                AnyDesk, TeamViewer), Windows 10/11 &amp; MS Office/Outlook, PC/Printer Troubleshooting,
+                                LAN/WAN &amp; IP Management (DHCP/DNS), Wi-Fi/Router/Switch &amp; CCTV Setup, IT Asset
+                                Management, WordPress Administration, Python, HTML5/CSS3/JS, Git, Vercel.</li>
+                            </ul>
+                          </div>
+
+                          <!-- Project CV 1: English Center Management with AI Chatbot -->
+                          <div class="experienceBlock">
+                            <div class="ant-row">
+                              <div class="ant-col ant-col-xs-24">
+                                <h3 style="margin-bottom: 0.25em;">AI CHATBOT-INTEGRATED ENGLISH CENTER CHAIN MANAGEMENT
+                                  WEBSITE</h3>
+                                <span class="experienceMeta"><strong>Role: AI Chatbot Developer &amp; System
+                                    Integrator</strong> (Team size: 2 members) | May 2025 - July 2025</span>
+                              </div>
+                            </div>
+                            <ul class="experienceList">
+                              <li>Built a centralized management platform enabling staff to monitor multi-branch
+                                performance, including student enrollment, courses, classes, exams, tuition fees, and
+                                analytical dashboards.</li>
+                              <li>Developed and integrated an intelligent <strong>AI Chatbot</strong> powered by
+                                <strong>LangChain Framework</strong> to automatically answer user inquiries quickly and
+                                conveniently 24/7, significantly enhancing user experience and customer support
+                                efficiency.
+                              </li>
+                              <li><strong>Technology:</strong> .NET Framework, LangChain Framework, C#, Python, SQL
+                                Server, HTML, CSS, Bootstrap, JavaScript, jQuery.</li>
+                              <li><strong>GitHub:</strong> <a
+                                  href="https://github.com/PhucQui003/chatbot-integrated-education-center-management-system"
+                                  target="_blank"
+                                  rel="noopener noreferrer">github.com/PhucQui003/chatbot-integrated-education-center-management-system</a>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <!-- Project CV 2: E-Commerce Clothing Website -->
+                          <div class="experienceBlock">
+                            <div class="ant-row">
+                              <div class="ant-col ant-col-xs-24">
+                                <h3 style="margin-bottom: 0.25em;">E-COMMERCE CLOTHING WEBSITE (MPQ SHOP)</h3>
+                                <span class="experienceMeta"><strong>Role: Full-stack Developer</strong> (Team size: 1
+                                  member) | July 2024 - October 2024</span>
+                              </div>
+                            </div>
+                            <ul class="experienceList">
+                              <li><strong>Admin Dashboard:</strong> Comprehensive management of users, product catalog,
+                                sales statistics, role-based access control, and order fulfillment workflows.</li>
+                              <li><strong>Authentication &amp; Authorization:</strong> Secure login, registration,
+                                logout, and role-based session authentication powered by <strong>JWT (JSON Web
+                                  Token)</strong>.</li>
+                              <li><strong>Shopping Cart:</strong> Add, update quantities, and remove items in the cart
+                                with seamless checkout processing.</li>
+                              <li><strong>Product Management:</strong> Dynamic product categories with keyword search,
+                                category filtering, full CRUD operations, and cloud image uploads integrated via
+                                <strong>Cloudinary</strong>.
+                              </li>
+                              <li><strong>Technology:</strong> NodeJS, ExpressJS, MongoDB, MongoDB Atlas, Cloudinary,
+                                Pug, HTML, CSS, Bootstrap.</li>
+                              <li><strong>GitHub:</strong> <a href="https://github.com/PhucQui003/product-management"
+                                  target="_blank" rel="noopener noreferrer">github.com/PhucQui003/product-management</a>
+                              </li>
+                            </ul>
+                          </div>
+
+                          <!-- Project CV 3: Job Portal Website -->
+                          <div class="experienceBlock">
+                            <div class="ant-row">
+                              <div class="ant-col ant-col-xs-24">
+                                <h3 style="margin-bottom: 0.25em;">JOB RECRUITMENT PORTAL WEBSITE</h3>
+                                <span class="experienceMeta"><strong>Role: Backend Developer</strong> (Team size: 2
+                                  members) | May 2024 - July 2024</span>
+                              </div>
+                            </div>
+                            <ul class="experienceList">
+                              <li><strong>Administrator:</strong> Review, approve, or reject job postings containing
+                                inappropriate content from employers, view platform analytics, and feature highlighted
+                                job listings to boost engagement.</li>
+                              <li><strong>Employer / Recruiter:</strong> Manage candidate applications, publish and edit
+                                job postings, and approve or reject submitted CVs.</li>
+                              <li><strong>Candidate:</strong> Create and manage personal profiles, search for matching
+                                job opportunities, and submit online applications tailored to employer requirements.
+                              </li>
+                              <li><strong>Authentication &amp; Authorization:</strong> Secure registration, login,
+                                logout, and multi-role access control implemented with <strong>JWT</strong>.</li>
+                              <li><strong>Technology:</strong> NodeJS, ExpressJS, MongoDB, MongoDB Atlas, Cloudinary,
+                                Pug, HTML, CSS, Bootstrap.</li>
+                              <li><strong>GitHub:</strong> <a href="https://github.com/PhucQui003/job-portal"
+                                  target="_blank" rel="noopener noreferrer">github.com/PhucQui003/job-portal</a></li>
+                            </ul>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <!-- 3. FEATURED PROJECTS GALLERY SECTION (delay-400) -->
+                      <div id="projectsSection" class="animate-fade-in-up delay-400" style="margin-top: 2.2rem;">
+                        <h2 class="titleSeparate">Featured Projects Gallery</h2>
+
+                        <!-- Category Filter Tabs -->
+                        <div class="projectTabs" role="tablist" aria-label="Project Categories">
+                          <button type="button" class="projectTabBtn active" data-filter="all">All Projects
+                            (9)</button>
+                          <button type="button" class="projectTabBtn" data-filter="cv">CV &amp; University Projects
+                            (3)</button>
+                          <button type="button" class="projectTabBtn" data-filter="phunong">Phu Nong Web &amp; Portals
+                            (6)</button>
+                          <button type="button" class="projectTabBtn" data-filter="tools">Automation &amp; AI Tools
+                            (2)</button>
+                        </div>
+
+                        <div class="ant-row gutter-20">
+
+                          <!-- Card 1: English Center AI Chatbot -->
+                          <div class="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-8 project-item-col"
+                            data-category="cv tools">
+                            <article class="projectCard">
+                              <div class="projectThumbWrap">
+                                <img src="assets/images/pic02.jpg"
+                                  alt="AI Chatbot-Integrated English Center Management System" class="projectThumb"
+                                  loading="lazy" />
+                                <span class="projectPeriodBadge">05/2025 - 07/2025</span>
+                              </div>
+                              <div class="projectBody">
+                                <h3>English Center Management System with AI Chatbot</h3>
+                                <div class="projectRole">AI Chatbot &amp; Full-stack Developer (Team of 2)</div>
+                                <p class="projectDesc">
+                                  Centralized multi-branch management system tracking students, courses, tuition fees,
+                                  and statistics, integrated with a 24/7 LangChain AI Chatbot.
+                                </p>
+                                <div class="projectTechWrap">
+                                  <span class="techTag">.NET Framework</span>
+                                  <span class="techTag">LangChain</span>
+                                  <span class="techTag">C#</span>
+                                  <span class="techTag">Python</span>
+                                  <span class="techTag">SQL Server</span>
+                                  <span class="techTag">Bootstrap</span>
+                                </div>
+                                <div class="projectActions">
+                                  <a href="https://github.com/PhucQui003/chatbot-integrated-education-center-management-system"
+                                    target="_blank" rel="noopener noreferrer" class="projectBtn projectBtnPrimary">
+                                    <i class="fa fa-github" style="margin:0;"></i> GitHub Repo
+                                  </a>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+
+                          <!-- Card 2: E-Commerce Clothing Website -->
+                          <div class="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-8 project-item-col"
+                            data-category="cv">
+                            <article class="projectCard">
+                              <div class="projectThumbWrap">
+                                <img src="assets/images/pic01.jpg" alt="E-Commerce Clothing Website MPQ Shop"
+                                  class="projectThumb" loading="lazy" />
+                                <span class="projectPeriodBadge">07/2024 - 10/2024</span>
+                              </div>
+                              <div class="projectBody">
+                                <h3>E-Commerce Clothing Website (MPQ Shop)</h3>
+                                <div class="projectRole">Full-stack Developer (Solo Project)</div>
+                                <p class="projectDesc">
+                                  Full-featured fashion e-commerce platform with shopping cart, dynamic category
+                                  filtering, JWT authentication, Admin dashboard, and Cloudinary image uploads.
+                                </p>
+                                <div class="projectTechWrap">
+                                  <span class="techTag">NodeJS</span>
+                                  <span class="techTag">ExpressJS</span>
+                                  <span class="techTag">MongoDB Atlas</span>
+                                  <span class="techTag">Pug</span>
+                                  <span class="techTag">JWT</span>
+                                  <span class="techTag">Cloudinary</span>
+                                </div>
+                                <div class="projectActions">
+                                  <a href="https://github.com/PhucQui003/product-management" target="_blank"
+                                    rel="noopener noreferrer" class="projectBtn projectBtnPrimary">
+                                    <i class="fa fa-github" style="margin:0;"></i> GitHub Repo
+                                  </a>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+
+                          <!-- Card 3: Job Portal Website -->
+                          <div class="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-8 project-item-col"
+                            data-category="cv">
+                            <article class="projectCard">
+                              <div class="projectThumbWrap">
+                                <img src="assets/images/pic03.jpg" alt="Job Recruitment Portal Website"
+                                  class="projectThumb" loading="lazy" />
+                                <span class="projectPeriodBadge">05/2024 - 07/2024</span>
+                              </div>
+                              <div class="projectBody">
+                                <h3>Job Recruitment Portal Website</h3>
+                                <div class="projectRole">Backend Developer (Team of 2)</div>
+                                <p class="projectDesc">
+                                  Online recruitment platform connecting Employers and Candidates with job posting
+                                  moderation, CV review workflows, analytics, and JWT security.
+                                </p>
+                                <div class="projectTechWrap">
+                                  <span class="techTag">NodeJS</span>
+                                  <span class="techTag">ExpressJS</span>
+                                  <span class="techTag">MongoDB</span>
+                                  <span class="techTag">Pug</span>
+                                  <span class="techTag">Bootstrap</span>
+                                  <span class="techTag">Cloudinary</span>
+                                </div>
+                                <div class="projectActions">
+                                  <a href="https://github.com/PhucQui003/job-portal" target="_blank"
+                                    rel="noopener noreferrer" class="projectBtn projectBtnPrimary">
+                                    <i class="fa fa-github" style="margin:0;"></i> GitHub Repo
+                                  </a>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+
+                          <!-- Card 5: Automatic Attendance & Payroll Tool -->
+                          <div class="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-8 project-item-col"
+                            data-category="tools phunong">
+                            <article class="projectCard">
+                              <div class="projectThumbWrap">
+                                <img src="assets/images/chamCong.png"
+                                  alt="Automatic Attendance Tracking & Excel Timekeeping Tool" class="projectThumb"
+                                  loading="lazy" />
+                                <span class="projectPeriodBadge">Automation</span>
+                              </div>
+                              <div class="projectBody">
+                                <h3>Automatic Attendance &amp; Excel Timekeeping Tool</h3>
+                                <div class="projectRole">Python Tool Developer @ Phu Nong Co., Ltd.</div>
+                                <p class="projectDesc">
+                                  Desktop GUI application that automates attendance log processing, aggregates business
+                                  trip days, and exports formatted payroll spreadsheets.
+                                </p>
+                                <div class="projectTechWrap">
+                                  <span class="techTag">Python</span>
+                                  <span class="techTag">Tkinter</span>
+                                  <span class="techTag">Pandas</span>
+                                  <span class="techTag">Pillow</span>
+                                  <span class="techTag">OpenPyXL</span>
+                                </div>
+                                <div class="projectActions">
+                                  <a href="https://github.com/QuiItPner/TNHHPhuNong_tuDongChamCong_tool" target="_blank"
+                                    rel="noopener noreferrer" class="projectBtn projectBtnPrimary">
+                                    <i class="fa fa-github" style="margin:0;"></i> Tool Repo
+                                  </a>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+
+                          <!-- Card 7: Biona Organic Landing Page -->
+                          <div class="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-8 project-item-col"
+                            data-category="phunong">
+                            <article class="projectCard">
+                              <div class="projectThumbWrap">
+                                <img src="assets/images/langdingPageBionaOrganic.png" alt="Biona Organic Landing Page"
+                                  class="projectThumb" loading="lazy" />
+                                <span class="projectPeriodBadge">Live on Vercel</span>
+                              </div>
+                              <div class="projectBody">
+                                <h3>Biona Organic - Product Landing Page</h3>
+                                <div class="projectRole">Frontend Web Developer</div>
+                                <p class="projectDesc">
+                                  Promotional landing page for Biona Organic bio-fertilizer featuring smooth scroll
+                                  animations, interactive product highlights, and responsive design.
+                                </p>
+                                <div class="projectTechWrap">
+                                  <span class="techTag">HTML5</span>
+                                  <span class="techTag">CSS3</span>
+                                  <span class="techTag">Bootstrap 5</span>
+                                  <span class="techTag">jQuery</span>
+                                  <span class="techTag">Vercel</span>
+                                </div>
+                                <div class="projectActions">
+                                  <a href="https://phu-nong-biona-organic.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer" class="projectBtn projectBtnPrimary">
+                                    <i class="fa fa-external-link" style="margin:0;"></i> Live Demo
+                                  </a>
+                                  <a href="https://github.com/QuiItPner/PhuNong_Biona_Organic" target="_blank"
+                                    rel="noopener noreferrer" class="projectBtn projectBtnSecondary">
+                                    <i class="fa fa-github" style="margin:0;"></i> GitHub
+                                  </a>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+
+                          <!-- Card 8: Raykat Start-Growth-Final Landing Page -->
+                          <div class="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-8 project-item-col"
+                            data-category="phunong">
+                            <article class="projectCard">
+                              <div class="projectThumbWrap">
+                                <img src="assets/images/raykats.png" alt="Raykat Start Growth Final Landing Page"
+                                  class="projectThumb" loading="lazy" />
+                                <span class="projectPeriodBadge">Live on Vercel</span>
+                              </div>
+                              <div class="projectBody">
+                                <h3>Raykat Trio (Start - Growth - Final) Landing Page</h3>
+                                <div class="projectRole">Frontend Web Developer</div>
+                                <p class="projectDesc">
+                                  Interactive product showcase page for the Atlántica Raykat 3-step plant nutrition
+                                  solution with embedded video guides and technical specifications.
+                                </p>
+                                <div class="projectTechWrap">
+                                  <span class="techTag">HTML5</span>
+                                  <span class="techTag">CSS3</span>
+                                  <span class="techTag">JavaScript</span>
+                                  <span class="techTag">Bootstrap 5</span>
+                                  <span class="techTag">Vercel</span>
+                                </div>
+                                <div class="projectActions">
+                                  <a href="https://phunong-raykat-start-growth-final.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer" class="projectBtn projectBtnPrimary">
+                                    <i class="fa fa-external-link" style="margin:0;"></i> Live Demo
+                                  </a>
+                                  <a href="https://github.com/QuiItPner/Raykat_start_growth_final" target="_blank"
+                                    rel="noopener noreferrer" class="projectBtn projectBtnSecondary">
+                                    <i class="fa fa-github" style="margin:0;"></i> GitHub
+                                  </a>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+
+                          <!-- Card 9: Rice Pesticide Application Process -->
+                          <div class="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-8 project-item-col"
+                            data-category="phunong">
+                            <article class="projectCard">
+                              <div class="projectThumbWrap">
+                                <img src="assets/images/rice_header.png" alt="Rice Pesticide Application Process Portal"
+                                  class="projectThumb" loading="lazy" />
+                                <span class="projectPeriodBadge">2026</span>
+                              </div>
+                              <div class="projectBody">
+                                <h3>Rice Pesticide Application Process Portal</h3>
+                                <div class="projectRole">Web Developer @ Phu Nong Co., Ltd.</div>
+                                <p class="projectDesc">
+                                  Interactive web guide illustrating stage-by-stage crop protection and pesticide
+                                  application protocols for rice cultivation.
+                                </p>
+                                <div class="projectTechWrap">
+                                  <span class="techTag">HTML5</span>
+                                  <span class="techTag">CSS3</span>
+                                  <span class="techTag">JavaScript</span>
+                                  <span class="techTag">Vercel</span>
+                                </div>
+                                <div class="projectActions">
+                                  <a href="https://quy-trinh-su-dung-thuoc-bvtv-lua.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer" class="projectBtn projectBtnPrimary">
+                                    <i class="fa fa-external-link" style="margin:0;"></i> Live Demo
+                                  </a>
+                                  <a href="https://github.com/QuiItPner/PhuNong_Rice_Pesticide_Application_Process"
+                                    target="_blank" rel="noopener noreferrer" class="projectBtn projectBtnSecondary">
+                                    <i class="fa fa-github" style="margin:0;"></i> GitHub
+                                  </a>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+
+                          <!-- Card 10: Durian Pesticide Application Process -->
+                          <div class="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-8 project-item-col"
+                            data-category="phunong">
+                            <article class="projectCard">
+                              <div class="projectThumbWrap">
+                                <img src="assets/images/durian_header.png" alt="Durian Pesticide Application Process Portal"
+                                  class="projectThumb" loading="lazy" />
+                                <span class="projectPeriodBadge">2026</span>
+                              </div>
+                              <div class="projectBody">
+                                <h3>Durian Pesticide Application Process Portal</h3>
+                                <div class="projectRole">Web Developer @ Phu Nong Co., Ltd.</div>
+                                <p class="projectDesc">
+                                  Digital technical handbook guiding farmers and agronomists through pest management and
+                                  nutrition across durian growth stages.
+                                </p>
+                                <div class="projectTechWrap">
+                                  <span class="techTag">HTML5</span>
+                                  <span class="techTag">CSS3</span>
+                                  <span class="techTag">JavaScript</span>
+                                  <span class="techTag">Vercel</span>
+                                </div>
+                                <div class="projectActions">
+                                  <a href="https://quy-trinh-su-dung-bvtv-sau-rieng.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer" class="projectBtn projectBtnPrimary">
+                                    <i class="fa fa-external-link" style="margin:0;"></i> Live Demo
+                                  </a>
+                                  <a href="https://github.com/QuiItPner/PhuNong_Durian_Pesticide_Application_Process"
+                                    target="_blank" rel="noopener noreferrer" class="projectBtn projectBtnSecondary">
+                                    <i class="fa fa-github" style="margin:0;"></i> GitHub
+                                  </a>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+
+                          <!-- Card 11: Coffee Pesticide Application Process -->
+                          <div class="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-8 project-item-col"
+                            data-category="phunong">
+                            <article class="projectCard">
+                              <div class="projectThumbWrap">
+                                <img src="assets/images/coffee_header.png" alt="Coffee Pesticide Application Process Portal"
+                                  class="projectThumb" loading="lazy" />
+                                <span class="projectPeriodBadge">2026</span>
+                              </div>
+                              <div class="projectBody">
+                                <h3>Coffee Pesticide Application Process Portal</h3>
+                                <div class="projectRole">Web Developer @ Phu Nong Co., Ltd.</div>
+                                <p class="projectDesc">
+                                  Dedicated web portal detailing fertilizer and crop protection schedules for Coffee
+                                  cultivation with an intuitive visual layout.
+                                </p>
+                                <div class="projectTechWrap">
+                                  <span class="techTag">HTML5</span>
+                                  <span class="techTag">CSS3</span>
+                                  <span class="techTag">JavaScript</span>
+                                  <span class="techTag">Vercel</span>
+                                </div>
+                                <div class="projectActions">
+                                  <a href="https://quy-trinh-su-dung-thuoc-bvtv-ca-phe.vercel.app/" target="_blank"
+                                    rel="noopener noreferrer" class="projectBtn projectBtnPrimary">
+                                    <i class="fa fa-external-link" style="margin:0;"></i> Live Demo
+                                  </a>
+                                  <a href="https://github.com/QuiItPner/PhuNong_Coffee_Pesticide_Application_Process"
+                                    target="_blank" rel="noopener noreferrer" class="projectBtn projectBtnSecondary">
+                                    <i class="fa fa-github" style="margin:0;"></i> GitHub
+                                  </a>
+                                </div>
+                              </div>
+                            </article>
+                          </div>
+
+                        </div>
+                      </div>
+
+                      <!-- 4. SKILLS PROGRESS & GITHUB STATS SECTION (delay-200, matching hongtin2104) -->
+                      <div class="animate-fade-in-up delay-200" style="margin-top: 2.5rem;">
+                        <div>
+                          <h2 class="titleSeparate">Skills Progress &amp; GitHub Analytics</h2>
+
+                          <!-- Skill Icons Banner from QuiItPner README -->
+                          <div class="skillIconsRow hover-lift">
+                            <p style="font-weight: 600; color: #0e3b40; margin-bottom: 12px;">
+                              Languages, Frameworks &amp; Tools
+                            </p>
+                            <img
+                              src="https://skillicons.dev/icons?i=py,cs,js,nodejs,express,dotnet,html,css,bootstrap,mongodb,mysql,git,github,vercel,pug"
+                              alt="Mai Phuc Qui Technical Stack Icons" loading="lazy"
+                              style="max-width: 100%; height: auto;" />
+                          </div>
+
+                          <!-- GitHub Summary Cards (Exact Layout & Hover Lift from SkillProgress.jsx) -->
+                          <div class="statsContainer">
+                            <div class="ant-row ant-row-center gutter-16">
+                              <div class="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-12">
+                                <img
+                                  src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=QuiItPner&theme=default"
+                                  alt="GitHub Stats for Mai Phuc Qui (QuiItPner)" class="statCard" loading="lazy"
+                                  width="400" height="160" />
+                              </div>
+                              <div class="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-12">
+                                <img
+                                  src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=QuiItPner&theme=default"
+                                  alt="Most Used Languages by Mai Phuc Qui" class="statCard" loading="lazy" width="400"
+                                  height="160" />
+                              </div>
+                              <div class="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-12">
+                                <img
+                                  src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=QuiItPner&theme=default"
+                                  alt="Repos Per Language - Mai Phuc Qui" class="statCard" loading="lazy" width="400"
+                                  height="160" />
+                              </div>
+                              <div class="ant-col ant-col-xs-24 ant-col-sm-12 ant-col-md-12 ant-col-lg-12">
+                                <img
+                                  src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=QuiItPner&theme=default"
+                                  alt="Productive Time - Mai Phuc Qui on GitHub" class="statCard" loading="lazy"
+                                  width="400" height="160" />
+                              </div>
+                              <div class="ant-col ant-col-xs-24">
+                                <img
+                                  src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=QuiItPner&theme=default"
+                                  alt="GitHub Profile Details for Mai Phuc Qui" class="statCardFull" loading="lazy"
+                                  width="820" height="160" />
+                              </div>
+                              <div class="ant-col ant-col-xs-24" style="text-align: center; margin-top: 8px;">
+                                <img
+                                  src="https://raw.githubusercontent.com/QuiItPner/QuiItPner/output/github-contribution-grid-snake.svg"
+                                  alt="Mai Phuc Qui Commit Snake Animation" class="statCardFull" loading="lazy"
+                                  style="padding: 10px; background: #fff;" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <!-- ==================== VIEW 2: CONTACT PAGE ==================== -->
+                  <div id="view-contact" class="page-view">
+                    <div class="marginTopTitle animate-fade-in-up delay-100">
+                      <h1 class="titleSeparate">Contact Mai Phuc Qui</h1>
+                    </div>
+                    <div class="ant-row gutter-40-20 animate-fade-in-up delay-200">
+                      <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-12">
+                        <img src="assets/images/contact.png" alt="Contact Mai Phuc Qui"
+                          class="widthFull contactImgBorder hover-grow" />
+                        <div
+                          style="margin-top: 1.5rem; padding: 1.2rem; background: #f5fbf7; border-radius: 14px; border: 1px solid #d4efe0;">
+                          <h4 style="margin-bottom: 0.6rem;">Direct Contact Information</h4>
+                          <p style="margin-bottom: 0.4rem;"><strong>Phone / Zalo:</strong> <a
+                              href="tel:0367068482">0367068482</a></p>
+                          <p style="margin-bottom: 0.4rem;"><strong>Email:</strong> <a
+                              href="mailto:quigitit350@gmail.com">quigitit350@gmail.com</a></p>
+                          <p style="margin-bottom: 0.4rem;"><strong>LinkedIn:</strong> <a
+                              href="https://www.linkedin.com/in/phucqui2310/" target="_blank"
+                              rel="noopener noreferrer">linkedin.com/in/phucqui2310</a></p>
+                          <p style="margin-bottom: 0;"><strong>GitHub:</strong> <a href="https://github.com/QuiItPner"
+                              target="_blank" rel="noopener noreferrer">github.com/QuiItPner</a> | <a
+                              href="https://github.com/PhucQui003" target="_blank"
+                              rel="noopener noreferrer">PhucQui003</a></p>
+                        </div>
+                      </div>
+
+                      <div class="ant-col ant-col-xs-24 ant-col-sm-24 ant-col-md-24 ant-col-lg-12 widthFull">
+                        <form id="contactForm" autocomplete="on">
+                          <div class="ant-form-item">
+                            <input type="text" id="contactName" name="name" class="ant-input" placeholder="Full Name *"
+                              required />
+                          </div>
+                          <div class="ant-form-item">
+                            <input type="email" id="contactEmail" name="email" class="ant-input" placeholder="Email" />
+                          </div>
+                          <div class="ant-form-item">
+                            <textarea id="contactDescription" name="description" rows="7" class="ant-input"
+                              placeholder="Description *" required></textarea>
+                          </div>
+                          <div class="ant-form-item">
+                            <button type="submit" class="ant-btn submit-button-effect">
+                              SUBMIT
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ==================== VIEW 3: RESUME PAGE ==================== -->
+                  <div id="view-resume" class="page-view">
+                    <div class="marginTopTitle resumeHeaderActions animate-fade-in-up delay-100">
+                      <h1 class="titleSeparate" style="margin-bottom: 1.5rem;">Resume of Mai Phuc Qui</h1>
+                      <a href="assets/resume/CV_MaiPhucQui.pdf" download="CV_MaiPhucQui.pdf"
+                        class="ant-btn submit-button-effect" style="text-decoration: none; color: #fff;">
+                        <i class="fa fa-download" style="margin-right: 8px; margin-left: 0;"></i> Download PDF
+                      </a>
+                    </div>
+                    <div class="resumeSection animate-fade-in-up delay-200">
+                      <iframe title="Resume PDF - Mai Phuc Qui" src="assets/resume/CV_MaiPhucQui.pdf#navpanes=0"
+                        width="100%" height="900" class="resumeViewer"></iframe>
+                    </div>
+                  </div>
+
+                </section>
+              </div>
+
+            </div>
+          </main>
+        </section>
+
+      </section>
+    </section>
+  </div>
+
+  <!-- Interactive & Animation Controller -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
