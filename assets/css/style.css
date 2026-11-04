@@ -885,11 +885,23 @@ img {
   margin-bottom: 0.5rem;
 }
 
+.introParagraph {
+  text-align: justify;
+}
+
 .experienceList li {
   margin-bottom: 0.45rem;
   line-height: 1.7;
   color: rgba(0, 0, 0, 0.82);
   text-align: justify;
+  overflow-wrap: break-word;
+}
+
+@media screen and (max-width: 767px) {
+  .introParagraph,
+  .experienceList li {
+    text-align: left;
+  }
 }
 
 .techTag {
