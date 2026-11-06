@@ -99,28 +99,32 @@
 
         <!-- ==================== HEADER NAVIGATION ==================== -->
         <div style="background: transparent;">
-          <div id="circleMenuBtn" class="circleMenu" role="button" tabindex="0" aria-label="Toggle Menu">
-            <div id="hamburgerIcon" class="hamburger">
-              <div class="line"></div>
-              <div class="line"></div>
-              <div class="hamburgerText">MENU</div>
-            </div>
-          </div>
-
-          <section id="headerNavWrap" class="ant-layout navWrap hidden">
+          <section id="headerNavWrap" class="ant-layout navWrap">
             <div class="backgroundDiv">
               <ul class="nav">
                 <li class="navItem">
-                  <a href="#about" data-page="about" class="anchorActive">About</a>
+                  <a href="#about" data-page="about" class="anchorActive">
+                    <i class="fa fa-user mobileNavIcon" aria-hidden="true"></i>
+                    <span>About</span>
+                  </a>
                 </li>
                 <li class="navItem">
-                  <a href="#projects" data-page="about" data-scroll="projectsSection">Projects</a>
+                  <a href="#projects" data-page="about" data-scroll="projectsSection">
+                    <i class="fa fa-folder-open mobileNavIcon" aria-hidden="true"></i>
+                    <span>Projects</span>
+                  </a>
                 </li>
                 <li class="navItem">
-                  <a href="#contact" data-page="contact">Contact</a>
+                  <a href="#contact" data-page="contact">
+                    <i class="fa fa-paper-plane mobileNavIcon" aria-hidden="true"></i>
+                    <span>Contact</span>
+                  </a>
                 </li>
                 <li class="navItem">
-                  <a href="#resume" data-page="resume">Resume</a>
+                  <a href="#resume" data-page="resume">
+                    <i class="fa fa-file-text mobileNavIcon" aria-hidden="true"></i>
+                    <span>Resume</span>
+                  </a>
                 </li>
               </ul>
             </div>

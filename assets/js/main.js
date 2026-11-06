@@ -4,46 +4,8 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Mobile Hamburger Menu Toggle (matches Header/index.jsx)
-  const circleMenu = document.getElementById('circleMenuBtn');
-  const hamburger = document.getElementById('hamburgerIcon');
-  const navWrap = document.getElementById('headerNavWrap');
-
-  let menuOpen = false;
-
-  function setMenuState(open) {
-    menuOpen = open;
-    if (menuOpen) {
-      hamburger.classList.add('menuIcon');
-      navWrap.classList.remove('hidden');
-      navWrap.classList.add('openMenu');
-    } else {
-      hamburger.classList.remove('menuIcon');
-      navWrap.classList.add('hidden');
-      navWrap.classList.remove('openMenu');
-    }
-  }
-
-  function toggleMenu() {
-    if (window.innerWidth <= 768) {
-      setMenuState(!menuOpen);
-    }
-  }
-
-  if (circleMenu) {
-    circleMenu.addEventListener('click', toggleMenu);
-    circleMenu.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        toggleMenu();
-      }
-    });
-  }
-
+  // 1. Responsive Sidebar Visibility Handler
   window.addEventListener('resize', () => {
-    if (window.innerWidth > 768 && menuOpen) {
-      setMenuState(false);
-    }
     updateSidebarVisibility();
   });
 
@@ -112,11 +74,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     updateSidebarVisibility();
-
-    // Close mobile menu if open
-    if (menuOpen) {
-      setMenuState(false);
-    }
 
     // Scroll handling
     if (scrollTargetId) {
