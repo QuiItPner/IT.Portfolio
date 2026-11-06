@@ -1277,6 +1277,33 @@ textarea.ant-input {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
 }
 
+.pdf-pages-mobile {
+  display: none;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.pdf-page-canvas {
+  width: 100% !important;
+  height: auto !important;
+  border-radius: 10px;
+  border: 1px solid #deefe5;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  background: #ffffff;
+  display: block;
+}
+
+@media screen and (max-width: 991px) {
+  .resumeViewer {
+    display: none;
+  }
+
+  .pdf-pages-mobile {
+    display: flex;
+  }
+}
+
 /* ==========================================================================
    ALL ANIMATIONS & KEYFRAMES (Exact Replica of hongtin2104.github.io)
    ========================================================================== */

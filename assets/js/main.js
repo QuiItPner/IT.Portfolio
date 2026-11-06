@@ -107,6 +107,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
+    if (targetPage === 'resume') {
+      renderMobilePdf();
+    }
+
     updateSidebarVisibility();
 
     // Close mobile menu if open
@@ -198,10 +202,38 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Initialize copyright year
-  const yearEl = document.getElementById('currentYear');
-  if (yearEl) {
-    yearEl.textContent = new Date().getFullYear();
+  // 5. Render All PDF Pages Clearly on Mobile/Tablet using PDF.js
+  let pdfRendered = false;
+  async function renderMobilePdf() {
+    if (pdfRendered) return;
+    const container = document.getElementById('pdfPagesContainer');
+    if (!container || typeof window.pdfjsLib === 'undefined') return;
+
+    pdfRendered = true;
+    window.pdfjsLib.GlobalWorkerOptions.workerSrc =
+      'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js';
+
+    try {
+      const loadingTask = window.pdfjsLib.getDocument('assets/resume/CV_MaiPhucQui.pdf');
+      const pdf = await loadingTask.promise;
+
+      for (let pageNum = 1; pageNum <= pdf.numPages; pageNum++) {
+        const page = await pdf.getPage(pageNum);
+        const scale = 2.2; // High-DPI crisp rendering for mobile screens
+        const viewport = page.getViewport({ scale });
+
+        const canvas = document.createElement('canvas');
+        canvas.className = 'pdf-page-canvas';
+        const context = canvas.getContext('2d');
+        canvas.height = viewport.height;
+        canvas.width = viewport.width;
+
+        container.appendChild(canvas);
+        await page.render({ canvasContext: context, viewport }).promise;
+      }
+    } catch (err) {
+      console.error('PDF.js render error:', err);
+    }
   }
 });
 
