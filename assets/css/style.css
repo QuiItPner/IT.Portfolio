@@ -845,7 +845,7 @@ img {
 .highlightBody a.verifyLink {
   color: #008c44;
   font-weight: 600;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .experienceBlock {
